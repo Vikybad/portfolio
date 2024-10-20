@@ -1,0 +1,61 @@
+#home {
+    text-align: center;
+    padding: 2rem;
+    /* background-color: #f9f9f9; */
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.profile-image img {
+    margin: 1rem;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.profile-image:hover img {
+    transform: scale(1.1);
+}
+
+.profession {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.contact-info {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.contact-info a {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #007bff;
+}
+
+.slow-animation {
+    animation-duration: 3s;
+}
+
+p {
+    margin: auto 400px;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    p {
+        margin: 0;
+    }
+}
