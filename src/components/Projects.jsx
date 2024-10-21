@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Projects.css';
 import load_builder_img from '../assets/load-builder.png'
+import log_watcher_img from '../assets/log-watcher.png'
 
 const projects = [
   {
@@ -17,11 +18,19 @@ const projects = [
     tech: 'Node.js, Express.js, React.js, REST API, fs, streams, lodash, web sockets',
     goal: 'Developer can see the logs of different microservices on a single page',
     description: 'Created file read and render stream using web sockets',
+    image: log_watcher_img
+  },
+  {
+    title: 'Text Utilities',
+    type: 'Personal',
+    tech: 'Node.js, REST APIs, MongoDB, ESK, Redis',
+    goal: 'Deliver all the orders on time and optimize overall delivery cost',
+    description: 'Deliver all the orders on time and optimize overall delivery cost',
     image: '/path/to/image'
   },
   {
-    title: 'Load Builder',
-    type: 'Official',
+    title: 'Shopping Dashboard App',
+    type: 'Personal',
     tech: 'Node.js, REST APIs, MongoDB, ESK, Redis',
     goal: 'Deliver all the orders on time and optimize overall delivery cost',
     description: 'Deliver all the orders on time and optimize overall delivery cost',
@@ -39,10 +48,25 @@ const Projects = () => {
 
             <div className='project-info'>
               <div>
-                <h2 className='project-title'>{project.title}</h2>
-                <h5 >Project type: </h5><h5 className='project-type'>{project.type}</h5>
-                <h5 className='project-tech'>Tech used:</h5> {project.tech}
-                <h4 className='project-goal'>Goal: </h4>{project.goal}
+                <div className="project-pair">
+                  <div className='project-title'>{project.title}</div>
+                </div>
+
+                <div className="project-pair">
+                  <div className='project-key'>Project type: </div>
+                  <div className='project-value'>{project.type}</div>
+                </div>
+
+                <div className="project-pair">
+                  <div className='project-key'>Tech used:</div>
+                  <div className='project-value'>{project.tech}</div>
+                </div>
+
+                <div className="project-pair">
+                  <div className='project-key'>Goal: </div>
+                  <div className='project-value'>{project.goal}</div>
+                </div>
+
               </div>
 
               <div className='project-img'>
